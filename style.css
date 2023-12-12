@@ -1,0 +1,94 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+:root{
+    --max-width_for_Desktop:1440px ;
+    --max-width_for_Mobile:375px;
+    --color1:hsl(213, 96%, 18%);
+    --color2:hsl(243, 100%, 62%);
+    --color3:hsl(228, 100%, 84%);
+    --color4:hsl(206, 94%, 87%);
+    --color5:hsl(354, 84%, 57%);
+    --color6:hsl(231, 11%, 63%);
+    --color7:hsl(229, 24%, 87%);
+    --color8:hsl(217, 100%, 97%);
+    --color9:hsl(231, 100%, 99%);
+    --color10:hsl(0, 0%, 100%);
+}
+@font-face {
+    font-family: 'Ub-Bold';
+    src: url(./assets/fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: 'Ub-Regular';
+    src: url(./assets/fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: 'Ub-Medium';
+    src: url(./assets/fonts/Ubuntu-Medium.ttf);
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    max-width: var(--max-width_for_Desktop);
+    justify-self: center;
+    align-self: center;
+    grid-auto-rows: auto;
+}
+/*** First Part of the project ***/
+.sidebar{
+    grid-column: 1 / 2;
+    background-color: var(--color3);
+    padding: 1.3em;
+    background: url(./assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px var(--color4) solid;
+    text-align: center;
+    padding: 5px;
+    margin-right: 10px;
+}
+.sidebar ul li{
+    display: flex;
+    margin-bottom: 1.5em;
+    font-family: 'Ub-regular';
+    align-items: center;
+   
+}
+.sidebar ul li div:nth-of-type(2) h3{
+    text-transform: uppercase;
+    color: var(--color8);
+    margin-top: 0.3em;
+    font-weight:800;
+}
+.sidebar ul li div:nth-of-type(2) p{
+    text-transform:capitalize;
+    color: var(--color5);
+    font-weight:400;
+    opacity: 0.6;
+}
+/*** End of First Part of the project ***/
+
+/*************************************************/
+
+/**********Second Part of the project ***********/
+.asidebar{
+    grid-column: 2 / 3;
+    background-color: var(--color2);
+}

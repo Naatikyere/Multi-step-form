@@ -99,7 +99,7 @@ body{
     position: relative;
 }
 .step1, .step2 , .step3 , .step4{
-    width: 70%;
+    width: 50%;
     position: absolute;
 }
 /******* Step one start *****/
@@ -204,9 +204,100 @@ form div input{
     transition: 0.5s;
 }
 
-
-
-
-
 /************step two end ************/
 
+/***********************************************************/
+
+/***** Step three Start *************/
+#section3{
+    display: none!important;
+}
+
+#detail_head{
+    display: flex;
+    flex-direction: column;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ub-Regular';
+    
+}
+.details .box{
+    margin-bottom: 1.2em;
+    border: 1px var(--color7) solid;
+    display: flex;
+    padding: 0.5em;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;   
+}
+.box .adds-offer{
+    margin-left: 20px;
+}
+.box .adds-offer p{
+    color: var(--color7);
+    font-size: 0.9em;
+    margin-top: 2.5px;
+}
+.checkmark{
+    height: 18px;
+    width: 18px;
+    background-color: var(--color2);
+    border-radius: 5px;
+    text-align: center;
+}
+.checkmark div{
+    margin-left: 20px;
+}
+.box .prices{
+    margin-right: 20px; 
+    flex: 1;
+    text-align: end;
+    color: var(--color2);
+    font-size: 0.9em;
+}
+
+/****** Step three end ************/
+
+/*************************************/
+
+/*******Step four start **************/
+.finishing_center{
+    background-color: var(--color7);
+    padding: 1.2em;
+    width: 100%;
+    margin-bottom: 1.2em;
+    font-family: 'Ub-Regular';
+}
+.listingnprice {
+    display: flex;
+    flex-direction: column;
+}
+
+.listingnprice div{
+    display: flex;
+    flex: 1;
+    margin: 1em 0;
+    font-size: 0.5em;
+}
+.listingnprice div h3:nth-of-type(1){
+    flex: 1;
+}
+.listingnprice div p:nth-of-type(1){
+    flex: 1;
+}
+.totaling{
+    display: flex;
+    flex: 1;
+}
+.totaling p{
+    flex: 1;
+}
+.totaling p:nth-last-child(1){
+    text-align: right;
+    margin-right:0.5em ;
+    padding: 0.6em;
+}
+
+/*********step four end **************/
